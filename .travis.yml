@@ -7,6 +7,8 @@ before_install:
   - brew install geckodriver
   - brew cask install firefox
 
+script: "mvn cobertura:cobertura"
+
 after_success:
   - mvn cobertura:cobertura coveralls:report
   - bash <(curl -s https://codecov.io/bash)
