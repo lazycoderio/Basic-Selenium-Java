@@ -35,6 +35,9 @@
                     <groupId>org.eluder.coveralls</groupId>
                     <artifactId>coveralls-maven-plugin</artifactId>
                     <version>4.3.0</version>
+                    <configuration>
+                        <sourceEncoding>UTF8</sourceEncoding>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
@@ -46,6 +49,7 @@
                             <format>xml</format>
                         </formats>
                         <check />
+                        <maxmem>256m</maxmem>
                     </configuration>
                 </plugin>
             </plugins>
