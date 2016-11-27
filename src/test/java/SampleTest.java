@@ -23,7 +23,7 @@ public class SampleTest {
         DesiredCapabilities caps = DesiredCapabilities.chrome();
         DesiredCapabilities capabilities = DesiredCapabilities.firefox();
         capabilities.setCapability("marionette", true);
-        FirefoxBinary ff = new FirefoxBinary(new File("/Applications/Firefox.app/Contents/MacOS/firefox"));
+        FirefoxBinary ff = new FirefoxBinary(new File("/Applications/Firefox.app/Contents/MacOS/firefox-bin"));
         FirefoxProfile ffp = new FirefoxProfile();
         driver = new FirefoxDriver(ff, ffp, capabilities);
     }
