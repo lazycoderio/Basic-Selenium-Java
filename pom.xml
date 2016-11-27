@@ -8,13 +8,6 @@
     <artifactId>javajenkins</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <repositories>
-        <repository>
-            <id>jcenter</id>
-            <name>bintray</name>
-            <url>http://jcenter.bintray.com</url>
-        </repository>
-    </repositories>
 
     <dependencies>
         <dependency>
@@ -25,7 +18,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.9.12</version>
+            <version>6.9.13.6</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
