@@ -1,9 +1,12 @@
 os: osx
 language: java
+sudo: false # faster builds
+
 before_install:
   - brew update
   - brew install geckodriver
   - brew cask install firefox
+
 after_success:
+  - mvn cobertura:cobertura coveralls:report
   - bash <(curl -s https://codecov.io/bash)
-  - mvn clean cobertura:cobertura coveralls:report
