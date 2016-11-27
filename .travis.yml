@@ -1,4 +1,6 @@
 os: osx
 language: java
 before_install:
+  - brew update
   - brew install geckodriver
+  - brew cask install firefox
