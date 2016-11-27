@@ -1,3 +1,4 @@
+os: osx
 language: java
 before_install:
   - brew install geckodriver
