@@ -6,6 +6,11 @@
 
 [![codecov](https://codecov.io/gh/lazycoderio/sample-java-jenkins/branch/master/graph/badge.svg)](https://codecov.io/gh/lazycoderio/sample-java-jenkins)
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2da21d82c84640028d90abf2de796022)](https://www.codacy.com/app/andrew-m-krug/sample-java-jenkins?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lazycoderio/sample-java-jenkins&amp;utm_campaign=Badge_Grade)
+
+[![Code Climate](https://codeclimate.com/github/lazycoderio/sample-java-jenkins/badges/gpa.svg)](https://codeclimate.com/github/lazycoderio/sample-java-jenkins)
+
+[![Dependency Status](https://www.versioneye.com/user/projects/583b58fd4ef164003ff45522/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/583b58fd4ef164003ff45522)
 
 This project is using the latest Selenium Bindings.
 
