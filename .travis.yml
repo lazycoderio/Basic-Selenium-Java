@@ -6,3 +6,4 @@ before_install:
   - brew cask install firefox
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+  - mvn clean test coveralls:report

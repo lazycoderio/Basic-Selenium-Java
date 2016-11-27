@@ -4,6 +4,9 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/lazycoderio/sample-java-jenkins/badge.svg?branch=master)](https://coveralls.io/github/lazycoderio/sample-java-jenkins?branch=master)
 
+[![codecov](https://codecov.io/gh/lazycoderio/sample-java-jenkins/branch/master/graph/badge.svg)](https://codecov.io/gh/lazycoderio/sample-java-jenkins)
+
+
 This project is using the latest Selenium Bindings.
 
 ## Setup
