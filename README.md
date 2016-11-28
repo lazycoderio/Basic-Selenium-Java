@@ -12,6 +12,8 @@
 
 [![Dependency Status](https://www.versioneye.com/user/projects/583b58fd4ef164003ff45522/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/583b58fd4ef164003ff45522)
 
+[![Build Status](https://travis-ci.org/lazycoderio/sample-java-jenkins.svg?branch=master)](https://travis-ci.org/lazycoderio/sample-java-jenkins)
+
 This project is using the latest Selenium Bindings.
 
 ## Setup
