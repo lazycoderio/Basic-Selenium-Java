@@ -19,12 +19,11 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.9.13.6</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
     <build>
-        <testSourceDirectory>src/test/java</testSourceDirectory>
+        <sourceDirectory>src/test/java</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
