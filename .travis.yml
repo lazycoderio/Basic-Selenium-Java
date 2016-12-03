@@ -5,21 +5,24 @@ addons:
   sonarqube:
     token:
       secure: f7ee339e87b3a7125b95957b3194ff6252870eb4
-jdk:
-- oraclejdk8
+
 script:
 - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
+
 cache:
   directories:
   - $HOME/.m2/repository
   - $HOME/.sonar/cache
+
 before_install:
 - brew update
 - brew install geckodriver
 - brew cask install firefox
+
 after_success:
 - mvn clean package
 - bash <(curl -s https://codecov.io/bash)
+
 env:
   global:
     secure: RN0oZzxNTklGPhofZ1KJuADbxpoF2Jcw+bkIzXPIXi/n+gAYHNYNjuMCsb7vx/sIm1fvgQDQFTW2gllvmdYRWribx0Gxv4YeAG22KQxa7lYfogMm+rsrKEU4lZOcqWTYmvI1Py+d1WT13xGJXJUdX74703yPeefUoLf5dpo9OczqBfEKqVXbwJztgr2CNeSbp8ahtjzaoqqA3OeNz0Ia1bzIAhA7ZyXJ4t9j8YRe+0rkJrjQpKfWeUWdkiB1ydHy191kOkWVoIRyC2jVySyVRypFPg5am5nP76ZRjsgTvvPz7at5jn/S3zWvP8Hr+zTuAT916OP3a5GUE2za1KQQVV3t/FY4oyK9NDRNOPG+YxbmXir2djmOksnkC8tTZ7EprZkuhLJINwbQ1uf5vwjsc0K4MqvK+AmkschNf280lUvhUVptdMUAM0zWErQsYQvsUDqylFber9Z8f2x2SY4kwASrKhjg0FpJuZkPWf2N6o6/iFP2R0C4rXYyluGgLHQvVpb94tvhjN/0+YDTRbif0mvDFR04Jt29VvmnXDkEsg2SUcNky1HoyA+USwnwZsJ1LlGAAIx0W/8hgCUqZ4RKa1mNmn4qMmpqQCl11THjnQOievts7bJn7dCMhL8BtmBQjW0YtJumRl2SIpeG6Ci8SZq0GrGaS7sQQMjle0UtXR8=
