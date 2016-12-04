@@ -15,7 +15,7 @@ cache:
   - $HOME/.sonar/cache
 
 before_install:
-- install_browser.sh
+  script: install_browser.sh
 
 after_success:
 - mvn package
