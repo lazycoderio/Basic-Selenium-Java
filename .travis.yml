@@ -15,9 +15,7 @@ cache:
   - $HOME/.sonar/cache
 
 before_install:
-- brew update
-- brew install geckodriver
-- brew cask install firefox
+- install_browser.sh
 
 after_success:
 - mvn package
