@@ -7,8 +7,8 @@ addons:
       secure: f7ee339e87b3a7125b95957b3194ff6252870eb4
 
 script:
-- chmod ugo+x install_browsers.sh
 - ./mac_install_browsers.sh
+- mvn clean test
 
 cache:
   directories:
