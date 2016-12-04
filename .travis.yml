@@ -8,7 +8,7 @@ addons:
 
 script:
 - chmod ugo+x install_browsers.sh
-- ./install_browsers.sh
+- ./mac_install_browsers.sh
 
 cache:
   directories:
