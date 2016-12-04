@@ -23,7 +23,7 @@ public class Safari {
         driver = new SafariDriver(capabilities);
     }
 
-    @Test(groups = {"mac"})
+    @Test//(groups = {"mac"})
     public void test(){
         driver.get("http://lazycoder.io/about.html");
         Assert.assertEquals(driver.getTitle(), "About");
