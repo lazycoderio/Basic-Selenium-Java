@@ -7,15 +7,13 @@ addons:
       secure: f7ee339e87b3a7125b95957b3194ff6252870eb4
 
 script:
+- install_browser.sh
 - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
 
 cache:
   directories:
   - $HOME/.m2/repository
   - $HOME/.sonar/cache
-
-before_install:
-  script: install_browser.sh
 
 after_success:
 - mvn package
