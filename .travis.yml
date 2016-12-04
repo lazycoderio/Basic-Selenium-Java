@@ -6,7 +6,9 @@ addons:
     token:
       secure: f7ee339e87b3a7125b95957b3194ff6252870eb4
 
-script: ./install_browsers.sh
+script:
+- chmod ugo+x install_browsers.sh
+- ./install_browsers.sh
 
 cache:
   directories:
