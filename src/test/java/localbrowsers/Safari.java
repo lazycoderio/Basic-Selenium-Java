@@ -1,18 +1,20 @@
-package LocalBrowsers;
+package localbrowsers;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 /**
  * Created by andrew on 12/3/16.
  */
 @Test//(groups = {"mac"})
 public class Safari {
-    WebDriver driver;
+    private WebDriver driver;
 
     @BeforeTest
     public void safariSetup(){

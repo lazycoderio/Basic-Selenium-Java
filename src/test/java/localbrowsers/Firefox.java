@@ -1,4 +1,4 @@
-package LocalBrowsers;
+package localbrowsers;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
@@ -6,7 +6,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import java.io.File;
 
@@ -15,7 +17,7 @@ import java.io.File;
  */
 @Test(groups = {"mac", "windows"})
 public class Firefox {
-    WebDriver driver;
+    private WebDriver driver;
 
     @BeforeTest
     public void firefoxSetup() {
