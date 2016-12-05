@@ -18,7 +18,10 @@ Run these commands depending on your base OS.
 ### Windows
 
 > This is currently untested
+
 1. Right-Click on `windows_install.bat` and select `Run as Administrator`
+
+You may still need to install the Java JDK and Maven as well
 
 #### Longer Instructions
 
