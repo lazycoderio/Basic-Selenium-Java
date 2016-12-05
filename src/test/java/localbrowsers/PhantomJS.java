@@ -1,17 +1,18 @@
-package LocalBrowsers;
+package localbrowsers;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 /**
  * Created by andrew on 12/3/16.
  */
 @Test(groups = {"mac", "windows"})
 public class PhantomJS {
-    WebDriver driver;
+    private WebDriver driver;
 
     @BeforeTest
     public void phantomJSSetup(){
