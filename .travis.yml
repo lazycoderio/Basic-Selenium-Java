@@ -9,7 +9,7 @@ addons:
 script:
 script:
 - ./mac_install_browsers.sh
-- mvn clean test  -Dsurefire.suiteXmlFiles=mac-only.xml
+- mvn clean test  -Dsurefire.suiteXmlFiles=mac-only.xml -X
 
 cache:
   directories:
