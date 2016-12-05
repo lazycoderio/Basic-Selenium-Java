@@ -6,16 +6,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.File;
 
 /**
  * Created by andrew on 12/3/16.
  */
-
+@Test(groups = {"mac", "windows"})
 public class Firefox {
     WebDriver driver;
 
@@ -27,8 +25,7 @@ public class Firefox {
         FirefoxProfile ffp = new FirefoxProfile();
         driver = new FirefoxDriver(ff, ffp, capabilities);
     }
-
-    @Test(groups = {"mac", "windows"})
+    @Test
     public void test(){
         driver.get("http://lazycoder.io/about.html");
         Assert.assertEquals(driver.getTitle(), "About");

@@ -5,13 +5,12 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 /**
  * Created by andrew on 12/3/16.
  */
+@Test//(groups = {"mac"})
 public class Safari {
     WebDriver driver;
 
@@ -22,8 +21,7 @@ public class Safari {
         capabilities.setCapability(SafariOptions.CAPABILITY, options);
         driver = new SafariDriver(capabilities);
     }
-
-    @Test//(groups = {"mac"})
+    @Test
     public void test(){
         driver.get("http://lazycoder.io/about.html");
         Assert.assertEquals(driver.getTitle(), "About");

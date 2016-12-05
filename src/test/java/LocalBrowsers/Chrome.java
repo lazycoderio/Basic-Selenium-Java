@@ -5,13 +5,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 /**
  * Created by andrew on 12/3/16.
  */
+@Test(groups = {"mac", "windows"})
 public class Chrome {
     WebDriver driver;
 
@@ -22,8 +21,7 @@ public class Chrome {
         capabilities.setCapability(ChromeOptions.CAPABILITY, options);
         driver = new ChromeDriver(capabilities);
     }
-
-    @Test(groups = {"firefox", "chrome", "safari"})
+    @Test
     public void test(){
         driver.get("http://lazycoder.io/about.html");
         Assert.assertEquals(driver.getTitle(), "About");

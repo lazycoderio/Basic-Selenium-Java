@@ -4,21 +4,16 @@
 This project is using the latest Selenium Bindings.
 
 ## Setup
+
 Run these commands depending on your base OS.
 
 ### On Mac OS
 
-Install Java JDK
-
-Install Homebrew `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-
-Install Caskroom `brew tap caskroom/cask`
-
-If you dont have the Java Development Kit (JDK) run this command `brew cask install java`
-
-Install Maven `brew install maven`
-
-Run `./mac_install_browsers.sh`
+1. Install Homebrew `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+2. Install Caskroom `brew tap caskroom/cask`
+3. If you dont have the Java Development Kit (JDK) run this command `brew cask install java`
+4. Install Maven `brew install maven`
+5. Run `./mac_install_browsers.sh`
 
 ## Running Tests
 
@@ -26,7 +21,7 @@ The following commands are instructions on how to run the tests
 
 ### From CLI
 
-`mvn test -Dgroups=mac` on a mac
+`mvn test  -Dsurefire.suiteXmlFiles=mac-only.xml ` on a mac
 
 ### Intellij Idea
 
@@ -36,7 +31,7 @@ There is a shared run configuration that has the maven target setup and another 
 
 Safari requires the following steps to enable Selenium Webdriver tests to run:
 
-1. Open Safari Prefrences
+1. Open Safari Preferences
 2. Go to the Advanced Tab
 3. Check the box at the bottom "Show Develop menu in menu bar"
 4. Click on the Develop menu 

@@ -7,9 +7,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 /**
  * Created by andrew on 12/3/16.
@@ -17,14 +15,13 @@ import org.testng.annotations.Test;
 public class Edge {
     WebDriver driver;
 
-    @BeforeTest
+    @BeforeClass
     public void edgeSetup(){
         DesiredCapabilities capabilities = DesiredCapabilities.edge();
         EdgeOptions options = new EdgeOptions();
         capabilities.setCapability(ChromeOptions.CAPABILITY, options);
         driver = new EdgeDriver(capabilities);
     }
-
     @Test(groups = {"windows"})
     public void test(){
         driver.get("http://lazycoder.io/about.html");

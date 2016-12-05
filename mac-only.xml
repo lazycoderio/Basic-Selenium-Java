@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mac Test Suite" parallel="none">
+    <test verbose="1" name="javajenkins">
+        <groups>
+            <run>
+                <include name="mac"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="LocalBrowsers.Chrome"/>
+            <class name="LocalBrowsers.Edge"/>
+            <class name="LocalBrowsers.Firefox"/>
+            <class name="LocalBrowsers.PhantomJS"/>
+            <class name="LocalBrowsers.Safari"/>
+        </classes>
+    </test> <!-- javajenkins -->
+</suite> <!-- Custom suite -->
