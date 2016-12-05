@@ -9,7 +9,6 @@ addons:
 script:
 script:
 - ./mac_install_browsers.sh
-- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
 - mvn clean test  -Dsurefire.suiteXmlFiles=mac-only.xml
 
 cache:
@@ -18,7 +17,7 @@ cache:
   - $HOME/.sonar/cache
 
 after_success:
-- mvn clean package
+- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
 - bash <(curl -s https://codecov.io/bash)
 
 env:
