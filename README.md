@@ -1,4 +1,4 @@
-[![Join the chat at https://gitter.im/lazycoderio/sample-java-jenkins](https://badges.gitter.im/lazycoderio/sample-java-jenkins.svg)](https://gitter.im/lazycoderio/sample-java-jenkins?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![codecov](https://codecov.io/gh/lazycoderio/Basic-Selenium-Java/branch/master/graph/badge.svg)](https://codecov.io/gh/lazycoderio/Basic-Selenium-Java) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/afdb9236cb2442faaa513c2db4114396)](https://www.codacy.com/app/andrew-m-krug/Basic-Selenium-Java?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lazycoderio/Basic-Selenium-Java&amp;utm_campaign=Badge_Grade) [![Dependency Status](https://www.versioneye.com/user/projects/583b58fd4ef164003ff45522/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/583b58fd4ef164003ff45522) [![Build Status](https://travis-ci.org/lazycoderio/Basic-Selenium-Java.svg?branch=master)](https://travis-ci.org/lazycoderio/Basic-Selenium-Java)
+[![Join the chat at https://gitter.im/lazycoderio/sample-java-jenkins](https://badges.gitter.im/lazycoderio/sample-java-jenkins.svg)](https://gitter.im/lazycoderio/sample-java-jenkins?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![codecov](https://codecov.io/gh/lazycoderio/Basic-Selenium-Java/branch/master/graph/badge.svg)](https://codecov.io/gh/lazycoderio/Basic-Selenium-Java) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/afdb9236cb2442faaa513c2db4114396)](https://www.codacy.com/app/andrew-m-krug/Basic-Selenium-Java?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lazycoderio/Basic-Selenium-Java&amp;utm_campaign=Badge_Grade) [![Dependency Status](https://www.versioneye.com/user/projects/583b58fd4ef164003ff45522/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/583b58fd4ef164003ff45522) [![Build Status](https://travis-ci.org/lazycoderio/Basic-Selenium-Java.svg?branch=master)](https://travis-ci.org/lazycoderio/Basic-Selenium-Java) [![Stories in Ready](https://badge.waffle.io/lazycoderio/Basic-Selenium-Java.png?label=ready&title=Ready)](https://waffle.io/lazycoderio/Basic-Selenium-Java)
 # Using this Project
 
 This project is using the latest Selenium Bindings.
@@ -14,6 +14,20 @@ Run these commands depending on your base OS.
 3. If you dont have the Java Development Kit (JDK) run this command `brew cask install java`
 4. Install Maven `brew install maven`
 5. Run `./mac_install_browsers.sh`
+
+### Windows
+
+> This is currently untested
+1. Right-Click on `windows_install.bat` and select `Run as Administrator`
+
+#### Longer Instructions
+
+1. The script should install Chocolatey the Windows package manager.
+2. Install latest versions of 
+    a. Firefox
+    b. Chrome
+    c. PhantomJS
+3. Selenium drivers for the above and the Edgedriver
 
 ## Running Tests
 
