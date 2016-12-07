@@ -9,13 +9,21 @@ Run these commands depending on your base OS.
 
 ### On Mac OS
 
+Copy this bootstrap script and run it in a Termianl shell window:
+
+   sh -c "$(curl -fsSL https://raw.githubusercontent.com/lazycoderio/Basic-Selenium-Java/master/mac-boostrap.sh)"
+
+It installs the following if it is not already installed:
+
 1. Install Homebrew `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 2. Install Caskroom `brew tap caskroom/cask`
 3. If you dont have the Java Development Kit (JDK) run this command `brew cask install java`
 4. Install Maven `brew install maven`
 5. Run `./mac_install_browsers.sh`
 
-### Windows
+The script also runs the test.
+
+### On Windows
 
 > This is currently untested
 
@@ -38,9 +46,11 @@ The following commands are instructions on how to run the tests
 
 ### From CLI
 
-`mvn test  -Dsurefire.suiteXmlFiles=mac-only.xml ` on a mac
+On a Mac:
 
-### Intellij Idea
+   `mvn test  -Dsurefire.suiteXmlFiles=mac-only.xml`
+
+### Intellij IDEA
 
 There is a shared run configuration that has the maven target setup and another with a sample built in NUnit test runner option.
 
