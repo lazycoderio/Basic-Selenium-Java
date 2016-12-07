@@ -31,8 +31,9 @@ set -e  # to stop on error.
 
 # Ensure Apple's command line tools are installed
 if ! command -v cc >/dev/null; then
-  fancy_echo "Installing xcode ..."
-  xcode-select --install 
+  fancy_echo "Installing xcode (Agreeing to the Xcode/iOS license requires sudo admin privileges) ..."
+  sudo xcodebuild -license accept
+  # xcode-select --install
 else
   fancy_echo "Xcode already installed. Skipping."
 fi
