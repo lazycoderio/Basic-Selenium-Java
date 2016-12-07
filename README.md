@@ -9,9 +9,11 @@ Run these commands depending on your base OS.
 
 ### On Mac OS
 
-Copy this bootstrap script and run it in a Termianl shell window:
+Copy this bootstrap script and run it in a Terminal shell window:
 
+   ```
    sh -c "$(curl -fsSL https://raw.githubusercontent.com/lazycoderio/Basic-Selenium-Java/master/mac-boostrap.sh)"
+   ```
 
 It installs the following if it is not already installed:
 
