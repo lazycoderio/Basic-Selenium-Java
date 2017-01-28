@@ -26,7 +26,7 @@ public class Chrome {
     @Test
     public void test(){
         driver.get("http://lazycoder.io/about.html");
-        Assert.assertEquals(driver.getTitle(), "About");
+        Assert.assertEquals(driver.getTitle(), "Lazy Coder Origins");
     }
 
     @AfterTest

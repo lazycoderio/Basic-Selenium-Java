@@ -23,14 +23,20 @@ public class Firefox {
     public void firefoxSetup() {
         DesiredCapabilities capabilities = DesiredCapabilities.firefox();
         capabilities.setCapability("marionette", true);
+        System.out.println(System.getProperty("os.name"));
+        if(!System.getProperty("os.name").toLowerCase().contains("windows")){
         FirefoxBinary ff = new FirefoxBinary(new File("/Applications/Firefox.app/Contents/MacOS/firefox-bin"));
         FirefoxProfile ffp = new FirefoxProfile();
-        driver = new FirefoxDriver(ff, ffp, capabilities);
+
+        driver = new FirefoxDriver(ff, ffp, capabilities);}
+        else{
+            driver = new FirefoxDriver();
+        }
     }
     @Test
     public void test(){
         driver.get("http://lazycoder.io/about.html");
-        Assert.assertEquals(driver.getTitle(), "About");
+        Assert.assertEquals(driver.getTitle(), "Lazy Coder Origins");
     }
 
     @AfterTest
