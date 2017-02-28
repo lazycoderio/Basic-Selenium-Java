@@ -9,4 +9,4 @@ choco install phantomjs -y
 choco install selenium-all-drivers -y
 choco install jdk8 -y
 choco install maven -y
-SETX PATH "%PATH%;C:\tools\selenium"
+SETX PATH "%PATH%;%ChocolateyToolsLocation%"
