@@ -12,7 +12,7 @@ Run these commands depending on your base OS.
 Copy this bootstrap script and run it in a Terminal shell window:
 
    ```
-   sh -c "$(curl -fsSL https://raw.githubusercontent.com/wilsonmar/Basic-Selenium-Java/master/mac-bootstrap.sh)"
+   sh -c "$(curl -fsSL https://raw.githubusercontent.com/lazycoderio/Basic-Selenium-Java/master/mac-bootstrap.sh)"
    ```
 
 It installs the following if it is not already installed:
@@ -27,11 +27,14 @@ The script also runs the test.
 
 ### On Windows
 
-> This is currently untested
+> This is currently having a few issue
 
-1. Right-Click on `windows_install.bat` and select `Run as Administrator`
+1. Download the zip file or clone this repository.
+2. Navigate to the unzipped folder within the file browser.
+3. Right-Click on `windows_install.bat` and select `Run as Administrator`
+4. Test the installation by running the following from a command window in the directory of this project
 
-You may still need to install the Java JDK and Maven as well
+   `mvn test  -Dsurefire.suiteXmlFiles=windows-only.xml`
 
 #### Longer Instructions
 
